@@ -2,6 +2,7 @@ import ProjectCard from "@/app/components/ProjectCard";
 
 const PROJECTLIST: ProjectType[] = [
 	{
+		id: 1,
 		title: "e-commerce thing",
 		content:
 			"The Interactive Recipe Recommender is a web application designed to revolutionize the way users discover and explore new recipes.",
@@ -11,6 +12,7 @@ const PROJECTLIST: ProjectType[] = [
 		codeSource: "http://github.com",
 	},
 	{
+		id: 2,
 		title: "Agence Assurance",
 		content:
 			"bs project content content contenennnt, therefore content contientetpo",
@@ -21,6 +23,7 @@ const PROJECTLIST: ProjectType[] = [
 		tags: ["Javascript", "TailwindCSS", "Zustand"],
 	},
 	{
+		id: 3,
 		title: "Agence Assurance",
 		content:
 			"The Interactive Recipe Recommender is a web application designed to revolutionize the way users discover and explore new recipes.",
@@ -32,6 +35,7 @@ const PROJECTLIST: ProjectType[] = [
 	},
 ];
 export type ProjectType = {
+	id: number;
 	title: string;
 	content: string;
 	previewImage: string;
@@ -52,6 +56,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 		<div className=" container w-100 lg:w-4/5 mx-auto flex flex-col">
 			{projectList?.map((project) => (
 				<ProjectCard
+					key={project.title}
 					title={project.title}
 					content={project.content}
 					image={project.previewImage}

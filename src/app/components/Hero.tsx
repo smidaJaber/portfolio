@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import imageme from "../../public/hero-pc-phone-tab.png";
 import cookingimg from "../../public/rocket.json";
 import { useEffect, useState } from "react";
 import { useScrollDirection } from "./useScrollDirection";
@@ -28,16 +26,16 @@ const Hero: React.FC<HeroProps> = ({}) => {
 					<legend className="bg-[#f9f104]">Bensmida Jaber</legend>
 					<p className="leading-7 [&:not(:first-child)]:mt-6  text-extrabold">
 						<span className="uppercase tracking-widest">
-							Hold on tight, we're busy building something epic!
+							Hold on tight, we&apos;re busy building something epic!
 						</span>
 						<br />
-						Our website is still baking in the digital oven, We're infusing it
-						with authentic Tunisian "fazeet".
+						Our website is still baking in the digital oven, We&apos;re infusing
+						it with authentic Tunisian &quot;fazeet&quot;.
 						<br />
-						We promise it'll be worth the wait.
+						We promise it&apos;ll be worth the wait.
 						<br />
-						We're excited to show you what we've got cooking, so stay tuned and
-						get ready for a digital feast!
+						We&apos;re excited to show you what we&apos;ve got cooking, so stay
+						tuned and get ready for a digital feast!
 					</p>
 				</article>
 			</div>

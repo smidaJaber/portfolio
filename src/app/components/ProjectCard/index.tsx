@@ -2,6 +2,7 @@
 
 import { WheelEvent, WheelEventHandler } from "react";
 import Button from "../Button";
+import Image from "next/image";
 
 interface ProjectCardProps {
 	title: string;
@@ -38,7 +39,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     shadow-md shadow-slate-100"
 		>
 			<div className="h-40 max-h-40 md:w-1/2 ">
-				<img
+				<Image
+					alt="project"
 					className="inset-0 h-full w-full object-cover object-center"
 					src={image}
 				/>
@@ -52,7 +54,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					<div>
 						<p className="text-xs font-light text-black m-2">
 							{tags?.map((tag) => (
-								<span className=" hover:underline hover:cursor-pointer bg-yellow-300 m-1 p-1 rounded-md">
+								<span
+									key={tag}
+									className=" hover:underline hover:cursor-pointer bg-yellow-300 m-1 p-1 rounded-md"
+								>
 									#{tag}
 								</span>
 							))}

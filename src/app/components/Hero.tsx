@@ -1,9 +1,7 @@
 "use client";
-import cookingimg from "../../public/rocket.json";
 import { useEffect, useState } from "react";
 import { useScrollDirection } from "./useScrollDirection";
-import Lottie from "lottie-react";
-
+import Image from "next/image";
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = ({}) => {
@@ -13,33 +11,32 @@ const Hero: React.FC<HeroProps> = ({}) => {
 		setTr((prev) => prev + 1);
 	}, [scrollDirection]);
 	return (
-		<div className="grid m-1">
-			<div>
-				<div className="absolute -left-40 -top-5">
-					<Lottie animationData={cookingimg} />
-				</div>
-
-				<article className=" rounded-md">
-					<h1 className="  text-4xl font-extrabold tracking-tight lg:text-5xl">
-						Welcome to Augmentic
+		<section className="p-6 dark:bg-gray-200 dark:text-gray-200">
+			<div className="container grid gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5">
+				<div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:text-gray-900 dark:bg-gray-100">
+					<span className="block mb-2 dark:text-violet-400">Hello world!</span>
+					<h1 className="text-5xl text-right   font-extrabold dark:text-gray-950">
+						Bensmida Jaber
 					</h1>
-					<legend className="bg-[#f9f104]">Bensmida Jaber</legend>
-					<p className="leading-7 [&:not(:first-child)]:mt-6  text-extrabold">
-						<span className="uppercase tracking-widest">
-							Hold on tight, we&apos;re busy building something epic!
+					<p className="my-8 text-left">
+						A very talented{" "}
+						<span className="font-medium dark:text-gray-700">
+							Web developer{" "}
 						</span>
-						<br />
-						Our website is still baking in the digital oven, We&apos;re infusing
-						it with authentic Tunisian &quot;fazeet&quot;.
-						<br />
-						We promise it&apos;ll be worth the wait.
-						<br />
-						We&apos;re excited to show you what we&apos;ve got cooking, so stay
-						tuned and get ready for a digital feast!
+						who like to solve problems. At least after somehow getting in there
+						in the first place. Because, you know.
+						<br /> I like space; giving things space to breath.
 					</p>
-				</article>
+				</div>
+				<Image
+					height={500}
+					width={500}
+					src="https://i.ibb.co/PhYPntH/youtube-video-gif.gif"
+					alt="bensmida jaber bloopers video"
+					className="object-cover bg-cover  w-full rounded-md xl:col-span-3 dark:bg-gray-500"
+				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

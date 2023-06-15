@@ -1,16 +1,37 @@
 "use client";
 import Gallery from "@/app/components/Gallery/Gallery";
-import Projects from "@/app/components/Gallery/Projects/Projects";
+import Projects from "@/app/components/Projects/Projects";
 import Hero from "@/app/components/Hero";
 import Navbar from "@/app/components/Navbar";
-import ProjectCard from "@/app/components/ProjectCard";
+import Experience from "@/app/components/Experience/Experience";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="bg-gray-200">
 			<Navbar />
 			<Hero />
 			<Projects />
+			<div
+				className="before:content-['']
+		 before:left-0 before:right-0  
+		 before:absolute
+		 before:h-[60px] before:bg-gray-100
+		 before:-skew-y-2
+		 pb-8 
+		 pt-8
+		 "
+			></div>
+			<Experience />
+			<div
+				className="before:content-['']
+		 before:left-0 before:right-0  
+		 before:absolute
+		 before:h-[60px] before:bg-gray-100
+		 before:skew-y-2
+		 pb-24
+		 
+		 "
+			></div>
 			<Gallery />
 		</div>
 	);

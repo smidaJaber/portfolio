@@ -30,8 +30,8 @@ export default function ExperiencePoint({ experience }: ExperienceProps) {
 				{startDate} - {endDate || "Now"}
 			</time>
 			<ul className="list-disc md:text-lg text-xl list-inside">
-				{tasks.map((task) => (
-					<li>{task}</li>
+				{tasks.map((task, i) => (
+					<li key={"#tasknumber#" + i}>{task}</li>
 				))}
 			</ul>
 		</div>

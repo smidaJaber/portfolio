@@ -43,6 +43,7 @@ export default function Skills({ skills }: SkillsProps) {
 				console.log(skillspadY);
 				return (
 					<div
+						key={"skillProj" + skill.name + "#i"}
 						className={`absolute rounded-full transition-all duration-[0.2s] 
 						ease-out scale-y-0 group-hover:scale-y-100  
 						${classTranslateX}  ${classTranslateY}

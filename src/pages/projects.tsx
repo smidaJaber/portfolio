@@ -1,5 +1,3 @@
-import ProjectCard from "@/app/components/ProjectCard";
-
 const PROJECTLIST: ProjectType[] = [
 	{
 		id: 1,
@@ -53,19 +51,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 		? PROJECTLIST
 		: null;
 	return (
-		<div className=" container w-100 lg:w-4/5 mx-auto flex flex-col">
-			{projectList?.map((project) => (
-				<ProjectCard
-					key={project.title}
-					title={project.title}
-					content={project.content}
-					image={project.previewImage}
-					previewLink={project.previewLink}
-					codeSource={project.codeSource}
-					tags={project.tags ?? undefined}
-				/>
-			)) || "no project found"}
-		</div>
+		<div className=" container w-100 lg:w-4/5 mx-auto flex flex-col"></div>
 	);
 };
 

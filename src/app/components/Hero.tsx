@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
 	return (
 		<section className=" p-8 dark:bg-gray-100 dark:text-gray-200 ">
 			<div className="container grid gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5">
-				<div className="group relative border w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:text-gray-900 dark:bg-gray-100">
+				<div className="group   relative border w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:text-gray-900 dark:bg-gray-100">
 					<span className="block mb-2 dark:text-green-800 font-mono">
 						Hello world!
 					</span>

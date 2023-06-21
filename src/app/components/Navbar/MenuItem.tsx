@@ -7,7 +7,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, linkPath }) => {
 	return (
 		<a
 			href={linkPath}
-			className="text-xl font-[800] font-sans px-4 py-2 
+			className="text-xl font-[800] font-sans  
 			rounded-full transition duration-300 ease-in-out
 			hover:bg-none hover:text-gray-50 text-black  
 			underline underline-offset-8

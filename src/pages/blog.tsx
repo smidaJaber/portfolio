@@ -2,6 +2,7 @@
 
 import BlogNavbar from "@/app/components/Blog/BlogNavbar";
 import Container from "@/app/components/Container";
+import Skills from "@/app/components/Projects/v1/Skills";
 
 interface BlogProps {}
 const Blog: React.FC<BlogProps> = ({}) => {
@@ -58,10 +59,102 @@ const Blog: React.FC<BlogProps> = ({}) => {
 						</legend>
 						<ul className="list-inside font-mono font-extralight list-decimal">
 							<li>
-								Beside language and color schema, some new user preferences to
-								think about
+								<span className="underline underline-offset-4">
+									Beside language and color schema, some new user preferences to
+									think about
+								</span>
+								<div className="ml-14 m-0 p-0 space-x-2">
+									<span
+										className={`inline-flex items-center  
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										AI
+									</span>
+									<span
+										className={`inline-flex items-center 
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										Realtime Analytics
+									</span>
+									<span
+										className={`inline-flex items-center 
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										ML
+									</span>
+									<span
+										className={`inline-flex items-center 
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										UI/UX
+									</span>
+								</div>
+
+								<div className=" text-xs border-l-2 ml-14 pl-4 sm:pl-6 dark:border-gray-400">
+									Welcome to a digital universe where user preferences extend
+									beyond the realm of language and color schemes. <br />
+									When we think about user preferences, we often picture
+									language choices and visual styles. But let us set our sights
+									higher and deeper, my friends. Religion introduces a whole new
+									dimension to the digital landscape. Imagine visiting a website
+									where believers from various faiths can navigate effortlessly
+									through personalized sections tailored to their religious
+									needs..
+								</div>
 							</li>
-							<li>A decision-less code base</li>
+							<li>
+								<span className="underline underline-offset-4">
+									Backend Responsiveness : Building a Decision-Less Code Base
+								</span>
+								<div className="ml-14 m-0 p-0 space-x-2">
+									<span
+										className={`inline-flex items-center  
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										Backend
+									</span>
+									<span
+										className={`inline-flex items-center 
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										Dependency Injection
+									</span>
+									<span
+										className={`inline-flex items-center 
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										Software Architecture
+									</span>
+									<span
+										className={`inline-flex items-center 
+								 bg-gray-50 px-2 py-0 text-xs  font-medium 
+								 text-gray-600 ring-1 ring-inset ring-gray-500/10`}
+									>
+										AI
+									</span>
+								</div>
+								<div className=" text-xs border-l-2 ml-14 pl-4 sm:pl-6 dark:border-gray-400">
+									I beleived I can break free from the shackles of stack choices
+									and create a code base that effortlessly adapts to the
+									ever-changing technological landscape.
+									<br />
+									Stack choices can often become bottlenecks, locking us into
+									specific technologies and limiting our ability to respond to
+									shifting industry trends.
+									<br />
+									By decoupling our code from stack-specific dependencies and
+									providing configuration as an external resource, we create a
+									modular architecture that effortlessly adapts to changing
+									stack preferences.
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>

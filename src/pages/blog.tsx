@@ -3,6 +3,8 @@
 import BlogNavbar from "@/app/components/Blog/BlogNavbar";
 import Container from "@/app/components/Container";
 import Skills from "@/app/components/Projects/v1/Skills";
+import { convertToSlug } from "@/lib/localposts";
+import Link from "next/link";
 
 interface BlogProps {}
 const Blog: React.FC<BlogProps> = ({}) => {
@@ -59,10 +61,18 @@ const Blog: React.FC<BlogProps> = ({}) => {
 						</legend>
 						<ul className="list-inside font-mono font-extralight list-decimal">
 							<li>
-								<span className="underline underline-offset-4">
-									Beside language and color schema, some new user preferences to
-									think about
-								</span>
+								<Link
+									href="/posts/[id]"
+									as={`posts/${convertToSlug(
+										"Beside language and color schema, some new user preferences to think about"
+									)}`}
+								>
+									<span className="underline underline-offset-4">
+										Beside language and color schema, some new user preferences
+										to think about
+									</span>
+								</Link>
+
 								<div className="ml-14 m-0 p-0 space-x-2">
 									<span
 										className={`inline-flex items-center  
@@ -109,9 +119,17 @@ const Blog: React.FC<BlogProps> = ({}) => {
 								</div>
 							</li>
 							<li>
-								<span className="underline underline-offset-4">
-									Backend Responsiveness : Building a Decision-Less Code Base
-								</span>
+								<Link
+									href="/posts/[id]"
+									as={`posts/${convertToSlug(
+										"Backend Responsiveness : Designing a Decision-Less Code Base"
+									)}`}
+								>
+									<span className="underline underline-offset-4">
+										Backend Responsiveness : Designing a Decision-Less Code Base
+									</span>
+								</Link>
+
 								<div className="ml-14 m-0 p-0 space-x-2">
 									<span
 										className={`inline-flex items-center  

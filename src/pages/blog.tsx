@@ -95,15 +95,17 @@ const Blog: React.FC<BlogProps> = ({}) => {
 								</div>
 
 								<div className=" text-xs border-l-2 ml-14 pl-4 sm:pl-6 dark:border-gray-400">
-									Welcome to a digital universe where user preferences extend
-									beyond the realm of language and color schemes. <br />
-									When we think about user preferences, we often picture
-									language choices and visual styles. But let us set our sights
-									higher and deeper, my friends. Religion introduces a whole new
-									dimension to the digital landscape. Imagine visiting a website
-									where believers from various faiths can navigate effortlessly
-									through personalized sections tailored to their religious
-									needs..
+									I constantly find my self thiking of a WEB where user
+									preferences extend beyond the realm of language and color
+									schemes. <br />
+									When we (Devs?) think about user preferences, we often picture
+									language choices and visual styles. It is good to take time
+									configuring color accent -_- .But let us set our sights higher
+									and deeper, my friends. Religion introduces a whole new
+									dimension to the digital landscape. Visiting a website where
+									religious (or not) from various faiths can navigate
+									effortlessly through personalized sections tailored to their
+									religious needs..
 								</div>
 							</li>
 							<li>
@@ -143,16 +145,16 @@ const Blog: React.FC<BlogProps> = ({}) => {
 								<div className=" text-xs border-l-2 ml-14 pl-4 sm:pl-6 dark:border-gray-400">
 									I beleived I can break free from the shackles of stack choices
 									and create a code base that effortlessly adapts to the
-									ever-changing technological landscape.
+									ever-changing tecks and stacks, AUTOMATICALLY.
 									<br />
-									Stack choices can often become bottlenecks, locking us into
-									specific technologies and limiting our ability to respond to
-									shifting industry trends.
+									Stack choices can often become bottlenecks(Actually always),
+									locking us into specific technologies and limiting our ability
+									to respond to shifting industry trends(not in a dump way).
 									<br />
 									By decoupling our code from stack-specific dependencies and
 									providing configuration as an external resource, we create a
 									modular architecture that effortlessly adapts to changing
-									stack preferences.
+									stack preferences. Furthermore, we...
 								</div>
 							</li>
 						</ul>

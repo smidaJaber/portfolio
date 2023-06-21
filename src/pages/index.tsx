@@ -1,6 +1,6 @@
 "use client";
 import Gallery from "@/app/components/Gallery/Gallery";
-import Projects from "@/app/components/Projects/Projects";
+import Projects from "@/app/components/Projects/v1/Projects";
 import Hero from "@/app/components/Hero";
 import Navbar from "@/app/components/Navbar";
 import Experience from "@/app/components/Experience/Experience";

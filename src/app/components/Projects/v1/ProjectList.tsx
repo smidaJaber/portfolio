@@ -9,8 +9,15 @@ import {
 	SiFirebase,
 	SiMysql,
 	SiSupabase,
+	SiElasticsearch,
+	SiSwagger,
 } from "react-icons/si";
-import { TbBrandMantine, TbBrandNextjs, TbBrandVite } from "react-icons/tb";
+import {
+	TbBrandMantine,
+	TbBrandNextjs,
+	TbBrandVite,
+	TbHelmet,
+} from "react-icons/tb";
 const now = new Date();
 now.setDate(now.getDate() - 7);
 const lastupdated = now.toLocaleDateString("en-us", {
@@ -23,7 +30,7 @@ const projects: ProjectT[] = [
 	{
 		handleSetMainImage: null,
 		handleResetMainImage: null,
-		startedAt: "12 June 2020",
+		startedAt: "April 2023",
 		title: "Insurance Agency",
 		description:
 			"this a website for an insurance agency that handles the agency\
@@ -44,15 +51,19 @@ const projects: ProjectT[] = [
 	{
 		handleSetMainImage: null,
 		handleResetMainImage: null,
-		startedAt: "01 June 2019",
-		title: "Racing game",
-		description: "A web site for a racing game available on playstore and web.",
+		startedAt: "June 2022",
+		title: "Dook 24 Tech store e-commerce",
+		description:
+			"A web site for an online Computer hardware store. This an example to show the usage of backend + API (Dook 24 means 24 Karat as an indice of gold purity)",
 		skills: [
 			{ icon: <FaHtml5 />, name: "HTML" },
 			{ icon: <TbBrandMantine />, name: "Mantine" },
 			{ icon: <SiTailwindcss />, name: "TailwindCSS" },
 			{ icon: <SiJavascript />, name: "Javascript" },
 			{ icon: <SiSupabase />, name: "SupaBase" },
+			{ icon: <FaNodeJs />, name: "Node.Js" },
+			{ icon: null, name: "Helmet.Js" },
+			{ icon: <SiSwagger />, name: "Swagger" },
 		],
 		sourceLink: "https://github.com/smidaJaber/insurance-agency",
 		previewLink: "https://insurance-agency-js.vercel.app/",
@@ -63,25 +74,27 @@ const projects: ProjectT[] = [
 	{
 		handleSetMainImage: null,
 		handleResetMainImage: null,
-		startedAt: "12 June",
-		title: "Grau! An electron+Reactjs app to manage Agriculture inventory",
+		startedAt: "Done by Sep. 2020",
+		title: "Invoice Generator",
 		description:
-			"this app started as a local business for an inventory that collects and resell dates (palm tree).",
+			"this app help in generating invoices and manages them through a user account. It is extensible in term of invoice templates",
 		skills: [
 			{ icon: <FaHtml5 />, name: "HTML" },
 			{ icon: <SiMysql />, name: "MySQL" },
 			{ icon: <FaCss3Alt />, name: "CSS" },
 			{ icon: <SiJavascript />, name: "Javascript" },
-			{ icon: <SiElectron />, name: "ElectronJs" },
-			{ icon: <FaNodeJs />, name: "NodeJs" },
+			{ icon: <SiElectron />, name: "Electron.Js" },
+			{ icon: <FaNodeJs />, name: "Node.Js" },
 		],
 		sourceLink: "https://github.com/smidaJaber/insurance-agency",
 		previewLink: "https://insurance-agency-js.vercel.app/",
 		isWIP: true,
+		specialButtonText: "Cleaning & Open-sourcing",
 		imageSrc:
 			"https://www.ixchelent.com/web/images/products/palm/dashboard.png",
 	},
 ];
+export { projects };
 export default function ProjectList({}: ProjectListProps) {
 	const defaultMainImage =
 		"https://images.unsplash.com/flagged/photo-1575663849788-ded5a98f9ee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80";

@@ -9,12 +9,14 @@ type ProjectCardFooterProps = {
 	sourceLink?: string;
 	previewLink?: string;
 	isWIP?: boolean;
+	specialBtnTxt?: string;
 };
 
 export default function ProjectCardFooter({
 	isWIP,
 	sourceLink,
 	previewLink,
+	specialBtnTxt,
 }: ProjectCardFooterProps) {
 	return (
 		<div className="inline-flex items-center py-2 space-x-2 float-right ">
@@ -24,7 +26,7 @@ export default function ProjectCardFooter({
 					href="#"
 					target="_blank"
 				>
-					Work In progress
+					{specialBtnTxt || "Work In progress"}
 					<ArrowUpOnSquareIcon
 						fontSize={"7px"}
 						className="ml-2 h-6 w-6"
@@ -32,9 +34,9 @@ export default function ProjectCardFooter({
 					/>
 				</a>
 			)) || (
-				<Fragment>
+				<div className="grid grid-cols-2 gap-0">
 					<a
-						className="inline-flex items-center px-2 mx-2 space-x-2 text-sm  text-blue-900 hover:border-white border-black border-2  rounded-md p-1 m-1"
+						className="inline-flex place-content-center items-center text-sm  text-blue-900 hover:border-white border-black border-2  rounded-md p-1 m-1"
 						href={sourceLink || "#"}
 						target="_blank"
 					>
@@ -45,7 +47,7 @@ export default function ProjectCardFooter({
 						/>
 					</a>
 					<a
-						className="inline-flex items-center px-2 mx-2 space-x-2 text-sm  text-blue-900 hover:border-white border-black border-2  rounded-md p-1 m-1"
+						className="inline-flex place-content-center items-center text-sm  text-blue-900 hover:border-white border-black border-2  rounded-md p-1 m-1"
 						href={previewLink || "#"}
 						target="_blank"
 					>
@@ -56,7 +58,7 @@ export default function ProjectCardFooter({
 							title="Preview project"
 						/>
 					</a>
-				</Fragment>
+				</div>
 			)}
 		</div>
 	);

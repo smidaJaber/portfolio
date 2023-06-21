@@ -1,9 +1,5 @@
 import React, { MouseEventHandler } from "react";
 import Skills, { Skill } from "./Skills";
-import {
-	ArrowTopRightOnSquareIcon,
-	CodeBracketIcon,
-} from "@heroicons/react/24/solid";
 import ProjectCardFooter from "./ProjectCardFooter";
 
 export type ProjectT = {
@@ -13,6 +9,7 @@ export type ProjectT = {
 	description: string;
 	startedAt: string;
 	skills?: Skill[];
+	specialButtonText?: string;
 	sourceLink?: string;
 	previewLink?: string;
 	isWIP?: boolean;
@@ -33,6 +30,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 		previewLink,
 		isWIP,
 		imageSrc,
+		specialButtonText,
 	} = project;
 	return (
 		<div
@@ -54,7 +52,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 			<a
 				rel="noopener noreferrer"
 				href="#"
-				className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400"
+				className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400 hidden"
 			>
 				<span>Read more</span>
 				<svg
@@ -75,6 +73,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 				sourceLink={sourceLink}
 				previewLink={previewLink}
 				isWIP={isWIP}
+				specialBtnTxt={specialButtonText}
 			/>
 		</div>
 	);

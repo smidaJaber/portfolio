@@ -3,6 +3,13 @@ import { useEffect, useState } from "react";
 import { useScrollDirection } from "./useScrollDirection";
 import Image from "next/image";
 import { MapPinIcon } from "@heroicons/react/24/solid";
+import {
+	FaGithub,
+	FaInstagram,
+	FaInstagramSquare,
+	FaLinkedin,
+	FaLinkedinIn,
+} from "react-icons/fa";
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = ({}) => {
@@ -12,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
 		setTr((prev) => prev + 1);
 	}, [scrollDirection]);
 	return (
-		<section className=" p-6 dark:bg-gray-100 dark:text-gray-200 ">
+		<section className=" p-8 dark:bg-gray-100 dark:text-gray-200 ">
 			<div className="container grid gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5">
 				<div className="group relative border w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:text-gray-900 dark:bg-gray-100">
 					<span className="block mb-2 dark:text-green-800 font-mono">
@@ -35,6 +42,35 @@ const Hero: React.FC<HeroProps> = ({}) => {
 						<br />
 						Committed to continuous learning and willing to share my knowledge
 						with others and to learn from them as well.
+					</p>
+					<p className="flex text-center place-content-center">
+						<span className=" text-2xl m-2">
+							<a
+								href="https://github.com/smidaJaber"
+								title="Bensmida Jaber's Github account link"
+								target="_blank"
+							>
+								<FaGithub />
+							</a>
+						</span>
+						<span className=" text-2xl m-2">
+							<a
+								href="https://www.linkedin.com/in/js-jaber-smida"
+								title="Bensmida Jaber's LinkedIn account link"
+								target="_blank"
+							>
+								<FaLinkedin />
+							</a>
+						</span>
+						<span className=" text-2xl m-2">
+							<a
+								href="https://www.instagram.com/jeber_bensmida"
+								title="Bensmida Jaber's Instagram account link"
+								target="_blank"
+							>
+								<FaInstagramSquare />
+							</a>
+						</span>
 					</p>
 				</div>
 

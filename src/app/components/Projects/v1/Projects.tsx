@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../../SectionHeader";
 import ProjectList from "./ProjectList";
 type ProjectsProps = {};
 

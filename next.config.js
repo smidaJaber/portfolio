@@ -6,6 +6,7 @@ const nextConfig = {
 			"dynamic-media-cdn.tripadvisor.com",
 			"i.ibb.co",
 			"images.unsplash.com",
+			"scontent.ftun9-1.fna.fbcdn.net",
 		],
 	},
 	future: {

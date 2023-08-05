@@ -644,7 +644,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 											des co&ucirc;ts sera fourni sur demande.
 										</li>
 										<li>
-											Le budget estim&eacute; pour ce projet est de [2,300 TND].
+											Le budget estim&eacute; pour ce projet est de [3,000 TND].
 											Cela inclut la conception, le d&eacute;veloppement, les
 											tests et la mise en ligne.
 										</li>
@@ -726,9 +726,9 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 										captureront l&apos;apparence globale du site.
 									</li>
 									<li>
-										D&eacute;veloppement Frontend: j'utilise le framework React
-										pour cr&eacute;er une interface utilisateur r&eacute; active
-										et conviviale.
+										D&eacute;veloppement Frontend: j&apos;utilise le framework
+										React pour cr&eacute;er une interface utilisateur r&eacute;
+										active et conviviale.
 									</li>
 									<li>
 										D&eacute;veloppement Backend: Le backend sera g&eacute;
@@ -786,8 +786,8 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 							{colorPalettes.map((palette, index) => (
-								<div>
-									<div key={index} className="bg-white rounded shadow p-4">
+								<div key={index}>
+									<div className="bg-white rounded shadow p-4">
 										<h3 className="text-lg font-semibold mb-2">
 											{palette.name}
 										</h3>
@@ -812,8 +812,8 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 							{colorPalettes2.map((palette, index) => (
-								<div>
-									<div key={index} className="bg-white rounded shadow p-4">
+								<div key={index}>
+									<div className="bg-white rounded shadow p-4">
 										<h3 className="text-lg font-semibold mb-2">
 											{palette.name}
 										</h3>

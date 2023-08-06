@@ -8,18 +8,35 @@ import {
 	FaCaravan,
 	FaCode,
 	FaCodeBranch,
+	FaHeadphonesAlt,
+	FaIntercom,
+	FaMagic,
 	FaMobileAlt,
 	FaMoneyCheckAlt,
+	FaNetworkWired,
 	FaPalette,
 	FaRegBuilding,
+	FaShoppingBasket,
+	FaSitemap,
 	FaUserAstronaut,
 	FaUsers,
+	FaWordpress,
 } from "react-icons/fa";
 import { SiSpeedtest } from "react-icons/si";
 import WebsitePreviewCard from "./PreviewCard/inde";
 import Lottie from "react-lottie";
 import animationData from "../../../../lotties/rocket.json";
-import { TbAlertCircle, TbBlockquote } from "react-icons/tb";
+import {
+	TbAlertCircle,
+	TbAlertTriangle,
+	TbBlockquote,
+	TbHeartHandshake,
+	TbIdBadge2,
+	TbListCheck,
+	TbLock,
+	TbLockAccessOff,
+	TbMoneybag,
+} from "react-icons/tb";
 type SEQUIGEMProposalProps = {};
 
 export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
@@ -76,13 +93,13 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 		},
 	};
 	return (
-		<div className="space-y-8 md:space-y-16 bg-gray-100 text-gray-800">
+		<div className="space-y-8 mb-0 md:space-y-16 bg-gray-100 text-gray-800">
 			<section className="bg-gray-100 text-gray-800">
 				<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 					<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 						<h1 className="text-5xl font-bold leadi sm:text-6xl">
 							Proposition de Site Web{" "}
-							<span className="text-blue-600">SEQUIGEM</span>Business
+							<span className="text-blue-600">SEQUIGEM</span> Business
 						</h1>
 						<p className="mt-6 mb-8 text-lg sm:mb-12">
 							Je suis ravi de vous pr&eacute;senter une proposition sur mesure
@@ -105,6 +122,26 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 					</div>
 				</div>
 			</section>
+			<section className=" p-20  bg-gradient-to-r group hover:from-green-400 hover:to-blue-500   from-gray-800 to-gray-600 to-gray-200">
+				<div className=" text-center rounded-sm ">
+					<h1 className="text-5xl font-bold leadi sm:text-6xl">
+						<span
+							className="text-gray-200 text-[80px] text-center m-0 p-0"
+							style={{
+								textShadow:
+									"1px 1px 1px #919191,\
+        1px 2px 1px #919191,  \
+    1px 5px 5px rgba(16,16,16,0.2),\
+    1px 7px 15px rgba(16,16,16,0.4),\
+      5px 10px 15px rgba(16,16,16,0.4)",
+							}}
+						>
+							<span>SEQUIGEM</span>
+							<hr className=" text-orange-600 border-orange-600 group-hover:border-gray-300  shadow-xl p-1" />
+						</span>{" "}
+					</h1>
+				</div>
+			</section>
 			<section className="bg-gray-100 text-gray-800">
 				<div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
 					<div>
@@ -117,12 +154,13 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 						</p>
 					</div>
 					<div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-						<div>
-							<p className=" text-orange-400 font-semibold border-orange-600 border-2 m-1 p-2">
-								* L&apos;estimation du temps et des co&ucirc;ts concerne un site
-								web de complexit&eacute; moyenne.
-								<br />* La proposition est encore en cours de
-								d&eacute;veloppement.
+						<div className="">
+							<TbAlertTriangle size={25} className="absolute m-4" />{" "}
+							<p className=" text-orange-600 font-semibold bg-orange-200  border-orange-100 rounded-xl  border-2 m-1 p-2">
+								<span className="ml-8">
+									L&apos;estimation du temps et des co&ucirc;ts concerne un site
+									web de complexit&eacute; moyenne.
+								</span>
 							</p>
 							<h3 className="text-2xl font-bold tracki sm:text-3xl text-gray-900">
 								Pr&eacute;sence Num&eacute;rique Solide
@@ -133,24 +171,11 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								votre visibilit&eacute; en ligne grâce &agrave; une plateforme
 								en ligne strat&eacute;gique et bien ex&eacute;cut&eacute;e.
 							</p>
-							<div className="mt-12 space-y-12">
+							<div className="mt-12 space-y-12 divide-y divide-gray-300">
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-600 text-gray-50">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor"
-												className="w-7 h-7"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													d="M5 13l4 4L19 7"
-												></path>
-											</svg>
+										<div className="flex items-center  m-4 justify-center w-12 h-12 rounded-md text-blue-600 bg-gray-100">
+											<TbIdBadge2 size={50} />
 										</div>
 									</div>
 									<div className="ml-4">
@@ -166,21 +191,8 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								</div>
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-600 text-gray-50">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor"
-												className="w-7 h-7"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													d="M5 13l4 4L19 7"
-												></path>
-											</svg>
+										<div className="flex items-center  m-4 justify-center w-12 h-12 rounded-md text-blue-600 bg-gray-100">
+											<TbHeartHandshake size={50} />
 										</div>
 									</div>
 									<div className="ml-4">
@@ -197,21 +209,8 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								</div>
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-600 text-gray-50">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor"
-												className="w-7 h-7"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													d="M5 13l4 4L19 7"
-												></path>
-											</svg>
+										<div className="flex items-center  m-4 justify-center w-12 h-12 rounded-md text-blue-600 bg-gray-100">
+											<TbLock size={50} />
 										</div>
 									</div>
 									<div className="ml-4">
@@ -228,21 +227,8 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								</div>
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-600 text-gray-50">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor"
-												className="w-7 h-7"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													d="M5 13l4 4L19 7"
-												></path>
-											</svg>
+										<div className="flex items-center  m-4 justify-center w-12 h-12 rounded-md text-blue-600 bg-gray-100">
+											<TbMoneybag size={50} />
 										</div>
 									</div>
 									<div className="ml-4">
@@ -258,21 +244,8 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								</div>
 								<div className="flex">
 									<div className="flex-shrink-0">
-										<div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-600 text-gray-50">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor"
-												className="w-7 h-7"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth="2"
-													d="M5 13l4 4L19 7"
-												></path>
-											</svg>
+										<div className="flex items-center  m-4 justify-center w-12 h-12 rounded-md text-blue-600 bg-gray-100">
+											<TbListCheck size={50} />
 										</div>
 									</div>
 									<div className="ml-4">
@@ -688,10 +661,41 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 					</div>
 				</div>
 			</section>
-			<section className="bg-gray-100 text-gray-800" hidden>
-				<div className="container flex flex-col p-6 mx-auto">
+			<section className="py-6 bg-orange-400 text-gray-900">
+				<div className="container mx-auto flex flex-col justify-around p-4 text-center md:p-10 lg:flex-row">
+					<div className="flex flex-col justify-center lg:text-left">
+						<p className="mb-1 text-sm font-medium tracki uppercase text-gray-600">
+							Conception et D&eacute;veloppement
+						</p>
+						<h1 className="py-2 text-3xl font-medium leadi title-font text-white">
+							Approche du Design et du D&eacute;veloppement
+						</h1>
+					</div>
+					<div className="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
+						<button
+							disabled
+							className="inline-flex items-center px-5 py-3 rounded-lg bg-blue-600 text-gray-50"
+						>
+							<FaShoppingBasket size={30} />
+							<span className="flex flex-col items-start ml-4 leadi">
+								<span className="mb-1 text-xs">
+									Designe et d&eacute;veloppement
+								</span>
+								<span className="font-semibold title-font">
+									Site web SEQUIGEM
+								</span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section className="bg-gray-100 text-gray-800">
+				<div className="container flex flex-col p-6 mx-auto divide-y divide-gray-300">
 					{/* Design et Identit&eacute;  de Marque */}
-					<div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+					<div
+						className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0 hidden"
+						hidden
+					>
 						<div className="flex items-center justify-center lg:col-span-1 col-span-full">
 							<FaPalette size={50} />
 						</div>
@@ -716,35 +720,35 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								Processus de D&eacute;veloppement
 							</span>
 							<span className="mt-4 text-gray-700">
-								Mon processus de D&eacute;veloppement se compose de plusieurs
-								&eacute; tapes bien d&eacute; finies pour garantir un r&eacute;
-								sultat final de qualit&eacute; sup&eacute; rieure:
+								Mon processus de d&eacute;veloppement se compose de plusieurs
+								&eacute; tapes bien d&eacute;finies pour garantir un
+								r&eacute;sultat final de qualit&eacute; sup&eacute;rieure:
 								<ul className="list-disc ml-7">
 									<li>
 										Conception Initiale: Nous travaillerons ensemble pour
-										cr&eacute; er des maquettes de conception initiales qui
+										cr&eacute;er des maquettes de conception initiales qui
 										captureront l&apos;apparence globale du site.
 									</li>
 									<li>
 										D&eacute;veloppement Frontend: j&apos;utilise le framework
-										React pour cr&eacute;er une interface utilisateur r&eacute;
-										active et conviviale.
+										React pour cr&eacute;er une interface utilisateur
+										r&eacute;active et conviviale.
 									</li>
 									<li>
 										D&eacute;veloppement Backend: Le backend sera g&eacute;
 										r&eacute; par Node.js, ce qui permettra une gestion efficace
-										des donn&eacute; es et des requ&ecirc;tes.
+										des donn&eacute;es et des requ&ecirc;tes.
 									</li>
 									<li>
-										Tests et R&eacute; visions: Chaque aspect du site sera
+										Tests et R&eacute;visions: Chaque aspect du site sera
 										test&eacute; pour assurer sa fonctionnalit&eacute; et sa
-										convivialit&eacute; . Les r&eacute; visions seront
-										effectu&eacute; es si n&eacute; cessaire.
+										convivialit&eacute;. Les r&eacute;visions seront
+										effectu&eacute;es si n&eacute;cessaire.
 									</li>
 									<li>
 										Lancement et Formation: Une fois que le site est pr&ecirc;t,
 										je vous fournirai une formation compl&egrave;te pour
-										g&eacute; rer le contenu et les fonctionnalit&eacute; s.
+										g&eacute;rer le contenu et les fonctionnalit&eacute;s.
 									</li>
 								</ul>
 							</span>
@@ -761,25 +765,66 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								Gestion de Projet
 							</span>
 							<span className="mt-4 text-gray-700">
-								Un chef de projet d&eacute; di&eacute; sera assign&eacute; pour
-								coordonner toutes les phases du projet. Ils seront votre
-								principal point de contact et vous tiendront inform&eacute; de
-								chaque &eacute; tape, de la conception &agrave; la mise en
-								ligne. Vous serez invit&eacute; &agrave; fournir des
-								commentaires &agrave; chaque &eacute; tape pour garantir que le
+								Pour coordonner toutes les phases du projet, je serai votre
+								principal point de contact et vous tiendrai inform&eacute; de
+								chaque &eacute;tape, de la conception &agrave; la mise en ligne.
+								Vous serez invit&eacute; &agrave; fournir des commentaires
+								&agrave; chaque &eacute;tape pour garantir que le
 								r&eacute;sultat final correspond &agrave; vos attentes.
+							</span>
+						</div>
+					</div>
+					{/* Formation et support */}
+					<div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+						<div className="flex items-center justify-center lg:col-span-1 col-span-full">
+							<FaHeadphonesAlt size={50} />
+						</div>
+						<div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+							<span className="text-xl font-bold md:text-2xl">
+								Formation et Support
+							</span>
+							<span className="mt-4 text-gray-700">
+								Apr&egrave;s le lancement du site, je vous fournirai une
+								formation approfondie pour g&eacute;rer efficacement votre site.
+								Vous apprendrez &agrave; ajouter et mettre &agrave; jour des
+								produits, g&eacute;rer les commandes et optimiser le contenu. Je
+								serai toujours disponible pour r&eacute;pondre &agrave; vos
+								questions et r&eacute;soudre tout probl&egrave;me.
+							</span>
+						</div>
+					</div>
+					{/* Maintenance */}
+					<div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
+						<div className="flex items-center justify-center lg:col-span-1 col-span-full">
+							<FaMagic size={50} />
+						</div>
+						<div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
+							<span className="text-xl font-bold md:text-2xl">
+								Maintenance et &eacute;volution
+							</span>
+							<span className="mt-4 text-gray-700">
+								Pour assurer la durabilit&eacute; et les performances continues
+								de votre site, je propose des plans de maintenance flexibles.
+								Cela comprendra des mises &agrave; jour r&eacute;guli&egrave;res
+								pour garantir la s&eacute;curit&eacute; et la
+								compatibilit&eacute;, ainsi que des ajustements en fonction de
+								l&apos;&eacute;volution de vos besoins commerciaux. Ces sections
+								ajoutent de la substance &agrave; votre proposition, offrant des
+								d&eacute;tails concrets sur la mani&egrave;re dont le projet
+								sera g&eacute;r&eacute;, d&eacute;velopp&eacute; et maintenu
+								pour r&eacute;pondre aux besoins de SEQUIGEM.
 							</span>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section className="bg-gray-100 text-gray-800">
+			<section className="bg-gray-200 text-gray-800">
 				<div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
 					<p className="p-2 text-sm font-medium tracki text-center  "></p>
 					<h2 className="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">
 						Inspiration pour le design
 					</h2>
-					<div className="py-8 px-4 bg-gray-100">
+					<div className="py-8 px-4 bg-gray-200">
 						<h2 className="text-2xl font-semibold mb-4">
 							Proposition de Palette de Couleurs bas&eacute; sur le logo
 							SEQUIGEM (Gris)
@@ -806,7 +851,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							))}
 						</div>
 					</div>
-					<div className="py-8 px-4 bg-gray-100">
+					<div className="py-8 px-4 bg-gray-200">
 						<h2 className="text-2xl font-semibold mb-4">
 							Autre Proposition de Palette de Couleurs
 						</h2>
@@ -835,10 +880,10 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 				</div>
 			</section>
 			<div
-				className="w-full bg-gray-600"
+				className="w-full bg-orange-800"
 				style={{
 					backgroundImage:
-						"url('https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');",
+						"url('https://images.unsplash.com/photo-1631856954913-c751a44490ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');",
 					backgroundPosition: "center center",
 					backgroundBlendMode: "multiply",
 					backgroundRepeat: "no-repeat",

@@ -126,7 +126,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 				<div className=" text-center rounded-sm ">
 					<h1 className="text-5xl font-bold leadi sm:text-6xl">
 						<span
-							className="text-gray-200 text-[80px] text-center m-0 p-0"
+							className="text-gray-200 lg:text-[80px] text-[45px] text-center m-0 p-0"
 							style={{
 								textShadow:
 									"1px 1px 1px #919191,\
@@ -137,7 +137,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							}}
 						>
 							<span>SEQUIGEM</span>
-							<hr className=" text-orange-600 border-orange-600 group-hover:border-gray-300  shadow-xl p-1" />
+							<hr className=" text-orange-600 w-full border-orange-600 group-hover:border-gray-300  shadow-xl p-1" />
 						</span>{" "}
 					</h1>
 				</div>
@@ -306,7 +306,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Conception et D&eacute;veloppement du Site Web
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left ">
 									<ul className="list-disc ml-7">
 										<li>
 											Concevoir un design de site Web distinctif et
@@ -342,7 +342,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Fonctionnalit&eacute;s E-commerce
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Cr&eacute;er un vaste catalogue de produits avec des
@@ -398,7 +398,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Exp&eacute;rience Utilisateur et Interface
 								</span>
-								<span className="mt-4 bg-gray-100 text-gray-700">
+								<span className="mt-4 bg-gray-100 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Concevoir un syst&egrave;me de navigation intuitif
@@ -432,7 +432,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									S&eacute;curit&eacute; et Performance
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Renforcer la s&eacute;curit&eacute; du site Web avec le
@@ -462,7 +462,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Gestion de Contenu et Photographie de Produits
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Fournir une assistance compl&egrave;te en mati&egrave;re
@@ -486,7 +486,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									D&eacute;veloppement d&apos;Applications Mobiles
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Offrir la possibilit&eacute; de d&eacute;velopper des
@@ -512,7 +512,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Fonctionnalit&eacute;s Avanc&eacute;es
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Int&eacute;gration transparente avec vos syst&egrave;mes
@@ -546,7 +546,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Int&eacute;gration de l&apos;Identit&eacute; Visuelle
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Incorporer le logo, la palette de couleurs et les
@@ -566,7 +566,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Calendrier et Date de Lancement
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Lancement du Projet : <b>Inconnu</b>
@@ -607,7 +607,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							</div>
 							<div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
 								<span className="text-xl font-bold md:text-2xl">Budget</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											L&apos;investissement requis pour ce projet sera
@@ -642,7 +642,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Demandes Additionnelles et Consid&eacute;rations
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											L&apos;int&eacute;gration transparente d&apos;options de
@@ -703,7 +703,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							<span className="text-xl font-bold md:text-2xl">
 								Design et Identit&eacute; de Marque
 							</span>
-							<span className="mt-4 text-gray-700">
+							<span className="mt-4 text-gray-700 text-left">
 								Dans cette section, je vais explorer le design visuel qui
 								donnera au site Web de SEQUIGEM son aspect unique. (En cours)
 							</span>
@@ -719,7 +719,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							<span className="text-xl font-bold md:text-2xl">
 								Processus de D&eacute;veloppement
 							</span>
-							<span className="mt-4 text-gray-700">
+							<span className="mt-4 text-gray-700 text-left">
 								Mon processus de d&eacute;veloppement se compose de plusieurs
 								&eacute; tapes bien d&eacute;finies pour garantir un
 								r&eacute;sultat final de qualit&eacute; sup&eacute;rieure:
@@ -764,7 +764,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							<span className="text-xl font-bold md:text-2xl">
 								Gestion de Projet
 							</span>
-							<span className="mt-4 text-gray-700">
+							<span className="mt-4 text-gray-700 text-left">
 								Pour coordonner toutes les phases du projet, je serai votre
 								principal point de contact et vous tiendrai inform&eacute; de
 								chaque &eacute;tape, de la conception &agrave; la mise en ligne.
@@ -783,7 +783,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							<span className="text-xl font-bold md:text-2xl">
 								Formation et Support
 							</span>
-							<span className="mt-4 text-gray-700">
+							<span className="mt-4 text-gray-700 text-left">
 								Apr&egrave;s le lancement du site, je vous fournirai une
 								formation approfondie pour g&eacute;rer efficacement votre site.
 								Vous apprendrez &agrave; ajouter et mettre &agrave; jour des
@@ -802,7 +802,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							<span className="text-xl font-bold md:text-2xl">
 								Maintenance et &eacute;volution
 							</span>
-							<span className="mt-4 text-gray-700">
+							<span className="mt-4 text-gray-700 text-left">
 								Pour assurer la durabilit&eacute; et les performances continues
 								de votre site, je propose des plans de maintenance flexibles.
 								Cela comprendra des mises &agrave; jour r&eacute;guli&egrave;res
@@ -909,7 +909,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Sp&eacute;cifications Techniques et Espace Administrateur
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Langages de Programmation: Le site sera
@@ -969,7 +969,7 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 								<span className="text-xl font-bold md:text-2xl">
 									Sp&eacute;cifications Fonctionnelles
 								</span>
-								<span className="mt-4 text-gray-700">
+								<span className="mt-4 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Catalogue de Produits: Les utilisateurs pourront parcourir
@@ -1021,9 +1021,9 @@ export default function SEQUIGEMProposal({}: SEQUIGEMProposalProps) {
 							</div>
 							<div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
 								<span className="text-xl font-bold md:text-2xl">
-									Structure Intuitive et Espace Administratif
+									Structure et Espace Administratif
 								</span>
-								<span className="mt-4 bg-gray-100 text-gray-700">
+								<span className="mt-4 bg-gray-100 text-gray-700 text-left">
 									<ul className="list-disc ml-7">
 										<li>
 											Page d&apos;Accueil: Pr&eacute;sentation des offres

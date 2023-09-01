@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import ProjectCard, { ProjectT } from "./ProjectCard";
-import { FaHtml5, FaReact, FaNodeJs, FaCss3Alt } from "react-icons/fa";
+import { FaHtml5, FaReact, FaPhp, FaNodeJs, FaCss3Alt } from "react-icons/fa";
 import {
 	SiElectron,
 	SiTailwindcss,
@@ -11,6 +11,7 @@ import {
 	SiSupabase,
 	SiElasticsearch,
 	SiSwagger,
+	SiWoocommerce,
 } from "react-icons/si";
 import {
 	TbBrandMantine,
@@ -52,21 +53,17 @@ const projects: ProjectT[] = [
 		handleSetMainImage: null,
 		handleResetMainImage: null,
 		startedAt: "June 2022",
-		title: "Dook 24 Tech store e-commerce",
-		description:
-			"A web site for an online Computer hardware store. This an example to show the usage of backend + API (Dook 24 means 24 Karat as an indice of gold purity)",
+		title: "Hardware store e-commerce",
+		description: "A web site for an online Hardware store.",
 		skills: [
 			{ icon: <FaHtml5 />, name: "HTML" },
-			{ icon: <TbBrandMantine />, name: "Mantine" },
-			{ icon: <SiTailwindcss />, name: "TailwindCSS" },
 			{ icon: <SiJavascript />, name: "Javascript" },
-			{ icon: <SiSupabase />, name: "SupaBase" },
-			{ icon: <FaNodeJs />, name: "Node.Js" },
-			{ icon: null, name: "Helmet.Js" },
-			{ icon: <SiSwagger />, name: "Swagger" },
+			{ icon: <SiTailwindcss />, name: "TailwindCSS" },
+			{ icon: <FaPhp />, name: "php" },
+			{ icon: <SiWoocommerce />, name: "Swagger" },
 		],
-		sourceLink: "https://github.com/smidaJaber/insurance-agency",
-		previewLink: "https://insurance-agency-js.vercel.app/",
+		sourceLink: "#privateSource",
+		previewLink: "http://sequigem.atwebpages.com/",
 		isWIP: true,
 		imageSrc:
 			"https://www.trustedreviews.com/wp-content/uploads/sites/54/2018/10/Forza-Horizon-4-Aston-Martin-Vulcan_1080x1920.jpg",

@@ -59,7 +59,7 @@ const projects: ProjectT[] = [
 			{ icon: <FaHtml5 />, name: "HTML" },
 			{ icon: <SiJavascript />, name: "Javascript" },
 			{ icon: <SiTailwindcss />, name: "TailwindCSS" },
-			{ icon: <FaPhp />, name: "php" },
+			{ icon: <FaPhp size={20} />, name: "php" },
 			{ icon: <SiWoocommerce />, name: "Swagger" },
 		],
 		sourceLink: "#privateSource",

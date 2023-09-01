@@ -11,7 +11,8 @@ import {
 	SiSupabase,
 	SiElasticsearch,
 	SiSwagger,
-	SiWoocommerce,
+	SiWoo,
+	SiPhp,
 } from "react-icons/si";
 import {
 	TbBrandMantine,
@@ -59,8 +60,8 @@ const projects: ProjectT[] = [
 			{ icon: <FaHtml5 />, name: "HTML" },
 			{ icon: <SiJavascript />, name: "Javascript" },
 			{ icon: <SiTailwindcss />, name: "TailwindCSS" },
-			{ icon: <FaPhp size={20} />, name: "php" },
-			{ icon: <SiWoocommerce />, name: "Swagger" },
+			{ icon: <SiPhp />, name: "php" },
+			{ icon: <SiWoo />, name: "Swagger" },
 		],
 		sourceLink: "#privateSource",
 		previewLink: "http://sequigem.atwebpages.com/",

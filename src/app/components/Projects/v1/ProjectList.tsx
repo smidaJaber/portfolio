@@ -65,7 +65,7 @@ const projects: ProjectT[] = [
 		],
 		sourceLink: "#privateSource",
 		previewLink: "http://sequigem.atwebpages.com/",
-		isWIP: true,
+		isWIP: false,
 		imageSrc:
 			"https://www.trustedreviews.com/wp-content/uploads/sites/54/2018/10/Forza-Horizon-4-Aston-Martin-Vulcan_1080x1920.jpg",
 	},
